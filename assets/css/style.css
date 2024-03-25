@@ -1,0 +1,110 @@
+body {
+    background-color: hsl(234, 29%, 20%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Roboto", sans-serif;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+
+}
+
+.initial-screen {
+    display: flex;
+}
+
+.initial-screen .description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px;
+    font-weight: 400;
+    font-size: 14px;
+    gap: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.initial-screen .description .list li {
+    margin-bottom: 10px;
+    display: block;
+
+
+}
+
+.initial-screen .description .list li::before {
+    content: url("/assets/images/icon-list.svg");
+    margin-right: 10px;
+    position: relative;
+    bottom: -5px;
+}
+
+.initial-screen .description form input {
+    display: block;
+    padding: 15px 130px 15px 10px;
+    border-radius: 10px;
+    border: 1px solid hsl(0, 6%, 83%);
+    margin-bottom: 10px;
+}
+.initial-screen .description form input:invalid{
+    border-color: crimson;
+    box-shadow: 0px 0px 3px crimson;
+}
+.initial-screen .description form small {
+    position: relative;
+    bottom: 3px;
+    color: hsl(234deg 49.59% 39.05%);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-color: hsl(234, 29%, 20%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    border: none;
+    width: 100%;
+}
+
+button:hover {
+    background-color: hsl(4, 100%, 67%);
+}
+
+
+.thanks {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+
+}
+
+.thanks p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.thanks #sucsses-icon{
+    width: 50px;
+    margin-bottom: 30px;
+}
+.hide {
+    display: none;
+}
